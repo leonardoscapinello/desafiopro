@@ -10,7 +10,7 @@ if (!isset($_SESSION)) {
 
 define("DIRNAME", dirname(__FILE__) . "/");
 define("SITE_NAME", "Desafio Pro - Shake Prime");
-define("SITE_URL", "http://desafiopro.com.br/");
+define("SITE_URL", "https://desafiopro.com.br/");
 define("LOGIN_URL", SITE_URL . "login");
 
 require_once(DIRNAME . "../vendor/autoload.php");
