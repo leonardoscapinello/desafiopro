@@ -14,7 +14,7 @@
                     é calculado percentualmente e em
                     cima de fórmulas testadas e aprovadas.</p>
                 <br>
-                <button class="modal-open" data-modal="modal-subscribe">GARANTIR MINHA VAGA</button>
+                <button  onClick="window.location.href='./cadastro';">GARANTIR MINHA VAGA</button>
             </div>
             <div class="col-xl-5 col-lg-5 col-sm-12">
                 <div style="position: relative;">

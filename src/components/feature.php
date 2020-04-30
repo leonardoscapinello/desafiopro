@@ -14,7 +14,7 @@
                                 <b>Cansaço, irritação, dor nas articulações e depressão</b>. São sintomas comuns de uma
                                 vida sedentária e alimentação desequilibrada, ainda mais evidente na quarentena.
                             </p>
-                            <button class="modal-open" data-modal="modal-subscribe">COMEÇAR AGORA</button>
+                            <button onClick="window.location.href='./cadastro';">COMEÇAR AGORA</button>
                         </div>
                     </div>
                 </div>

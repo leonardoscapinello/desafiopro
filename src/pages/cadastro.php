@@ -2,6 +2,14 @@
 if ($account->getCoachRequest() !== null) {
     $newCoach = new Accounts($account->getCoachRequest());
 }
+
+if (!$session->isLogged()) {
+    $requested_coach = $account->getCoachRequest();
+    if ($requested_coach === null && ($page === null || $page === "cadastro")) {
+        header("location: " . SITE_URL . "c?page=" . $page);
+    }
+}
+
 ?>
 <section>
     <div class="section half-pad blue-bg">

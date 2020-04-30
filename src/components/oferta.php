@@ -41,7 +41,7 @@
                         <p>Corra, antes que as vagas se esgotem ou o tempo acabe.</p>
                         <br/>
 
-                        <button class="modal-open" data-modal="modal-subscribe" style="margin: 0">GARANTIR MINHA VAGA
+                        <button  onClick="window.location.href='./cadastro';" style="margin: 0">GARANTIR MINHA VAGA
                         </button>
                     </div>
                 </div>

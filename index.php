@@ -7,12 +7,7 @@ $email = get_request("email");
 $phone = get_request("phone");
 
 $viewCoach = get_request("cid");
-if (!$session->isLogged()) {
-    $requested_coach = $account->getCoachRequest();
-    if ($requested_coach === null && ($page === null || $page === "cadastro")) {
-        header("location: " . SITE_URL . "c?page=" . $page);
-    }
-}
+
 
 if (($page === "members" || $page === "lesson" || $page === "affiliates") && !$session->isLogged()) {
     header("location: " . SITE_URL . "login?t=" . base64_encode(md5(date("dmYHisU"))));
