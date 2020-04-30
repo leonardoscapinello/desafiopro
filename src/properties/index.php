@@ -14,7 +14,6 @@ define("SITE_URL", "http://desafiopro.com.br/");
 define("LOGIN_URL", SITE_URL . "login");
 
 require_once(DIRNAME . "../vendor/autoload.php");
-require_once(DIRNAME . "/../class/lessphp/lessc.inc.php");
 
 require_once(DIRNAME . "/../functions/http_response_code.php");
 require_once(DIRNAME . "/../functions/user_agent.php");
@@ -41,6 +40,7 @@ require_once(DIRNAME . "/../class/SocialAnalytics.php");
 require_once(DIRNAME . "/../class/Upload.php");
 require_once(DIRNAME . "/../class/EmailNotification.php");
 require_once(DIRNAME . "/../class/Contents.php");
+require_once(DIRNAME . "/../class/lessphp/lessc.inc.php");
 
 require DIRNAME . '/../vendor/phpmailer/phpmailer/src/Exception.php';
 require DIRNAME . '/../vendor/phpmailer/phpmailer/src/PHPMailer.php';
