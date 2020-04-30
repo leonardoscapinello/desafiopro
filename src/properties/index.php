@@ -60,8 +60,8 @@ $token = new Token();
 $date = new Date();
 $emailNotification = new EmailNotification();
 $database = new Database();
-$database->query('SET NAMES utf8');
-$database->execute();
+//$database->query('SET NAMES utf8');
+//$database->execute();
 
 
 $security = new Security();
