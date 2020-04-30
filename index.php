@@ -26,15 +26,11 @@ if ($session->isLogged() && ($page !== "members" && $page !== "lesson" && $page 
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Desafio Pro Brasil - ShakePrime</title>
     <?php
     echo $socialAnalytics->getGoogleAnalyticsScript_Head("UA-163734366-1");
     echo $socialAnalytics->getFacebookPixel_Head("841178106386294");
     ?>
-    <link href="<?= $static->getStylesheetLocation("stylesheet.min.css") ?>" type="text/css" rel="stylesheet">
-    <link href="<?= $static->getStylesheetLocation("owl.carousel.css") ?>" type="text/css" rel="stylesheet">
-    <link href="<?= $static->getStylesheetLocation("owl.theme.default.css") ?>" type="text/css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
 </head>
 <body>
 <?php require(DIRNAME . "../components/header.php"); ?>
