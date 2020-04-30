@@ -40,7 +40,6 @@ require_once(DIRNAME . "/../class/SocialAnalytics.php");
 require_once(DIRNAME . "/../class/Upload.php");
 require_once(DIRNAME . "/../class/EmailNotification.php");
 require_once(DIRNAME . "/../class/Contents.php");
-require_once(DIRNAME . "/../class/lessphp/lessc.inc.php");
 
 require DIRNAME . '/../vendor/phpmailer/phpmailer/src/Exception.php';
 require DIRNAME . '/../vendor/phpmailer/phpmailer/src/PHPMailer.php';
@@ -70,6 +69,7 @@ $account = new Accounts();
 
 
 /*
+require_once(DIRNAME . "/../class/lessphp/lessc.inc.php");
 $less = new lessc();
 $less->compileFile(DIRNAME . "../../static/less/stylesheet.less", DIRNAME . "../../static/stylesheet/stylesheet.css");
 $static->add(DIRNAME . "../../static/stylesheet/fontawesome.all.min.css");
