@@ -10,7 +10,7 @@ if (!isset($_SESSION)) {
 
 define("DIRNAME", dirname(__FILE__) . "/");
 define("SITE_NAME", "Desafio Pro - Shake Prime");
-define("SITE_URL", "http://192.168.1.102/desafiopro/");
+define("SITE_URL", "http://desafiopro.com.br/");
 define("LOGIN_URL", SITE_URL . "login");
 
 require_once(DIRNAME . "../vendor/autoload.php");
@@ -69,6 +69,7 @@ $session = new AccountSession();
 $account = new Accounts();
 
 
+/*
 $less = new lessc();
 $less->compileFile(DIRNAME . "../../static/less/stylesheet.less", DIRNAME . "../../static/stylesheet/stylesheet.css");
 $static->add(DIRNAME . "../../static/stylesheet/fontawesome.all.min.css");
@@ -82,6 +83,6 @@ $static->setOutputFile(DIRNAME . "../../static/stylesheet/stylesheet");
 $static->addReplace("../images/", SITE_URL . "static/images/");
 $static->addReplace("../fonts/", SITE_URL . "static/fonts/");
 $static->compileCSS();
-
+*/
 
 ob_start("sanitize_output");
