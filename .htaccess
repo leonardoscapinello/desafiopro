@@ -1,0 +1,23 @@
+Options +FollowSymLinks -MultiViews
+
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+RewriteRule ^media/countdown/([0-9]+)-([0-9]+)-([0-9]+)/([0-9]+):([0-9]+):([0-9]+)$       ./static/images/countdown/index.php?date=$1-$2-$3&hour=$4:$5:$6 [L,NC,QSA]
+
+RewriteRule ^logout$                            ./src/public/logout.php?page=login [L,NC,QSA]
+RewriteRule ^login$                             ./index.php?page=login [L,NC,QSA]
+RewriteRule ^cadastro$                          ./index.php?page=cadastro [L,NC,QSA]
+RewriteRule ^cadastro/concluir$                 ./src/public/createAccount.php [L,NC,QSA]
+RewriteRule ^cadastro/password$                 ./index.php?page=password [L,NC,QSA]
+RewriteRule ^cadastro/confirmar$                ./index.php?page=confirmar-cadastro [L,NC,QSA]
+RewriteRule ^members$                           ./index.php?page=members&subcontent=home [L,NC,QSA]
+RewriteRule ^members/([a-zA-Z0-9-z\-\_]+)$      ./index.php?page=members&subcontent=$1 [L,NC,QSA]
+RewriteRule ^members/lesson/([0-9]+)/([a-zA-Z0-9-z\-\_]+)$      ./index.php?page=lesson&id=$1&token=$2 [L,NC,QSA]
+
+RewriteRule ^c$            ./src/public/setCoach.php [L,NC,QSA]
+RewriteRule ^c/([a-zA-Z0-9-z\-\_]+)$            ./src/public/setCoach.php?coach=$1 [L,NC,QSA]
+RewriteRule ^([a-zA-Z0-9-z\-\_]+)$              ./index.php?page=$1 [L,NC,QSA]
+
+
